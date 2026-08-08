@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pic-container">
+        <div>
+            <img src="images/odin-lined.png" alt="odin lined" class="odin-lined" />
+            <h1>Odin</h1>
+        </div>
+        <p>Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+    </div>
+    <div class="form-container">
+        <div class="info-text">
+            <p><b>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</b></p>
+            <p><b>You <i>know</i> you want to.</b></p>
+        </div>
+        <form class="my-form">
+            <div>
+                <p><b>Let's do this!</b></p>
+                <div class="field-area">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" placeholder="Thor" required>
+                </div>
+                <div class="field-area">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" placeholder="Odinson" required>
+                </div>
+                <div class="field-area">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" placeholder="example@outlook.com" required>
+                </div>
+                <div class="field-area">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" id="phone_number" placeholder="123-456-7890" pattern="^\d{3}-\d{3}-\d{4}$" required>
+                </div>
+                <div class="field-area">
+                    <label for="user_password">PASSWORD</label>
+                    <input type="password" id="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@!%*?&]).{8,}$" required>
+                </div>
+                <div class="field-area">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@!%*?&]).{8,}$" required>
+                </div>
+            </div>
+            <button class="create-btn">Create Account</button>
+        </form>
+        <p class="already-account">Already have an account? <span>Log in</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

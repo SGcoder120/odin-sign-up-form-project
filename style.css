@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('norse/Norse.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Norse', sans-serif;
+  font-size: 120px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgrey;
+}
+
+.pic-container {
+  background-image: url("images/leafy-bg.png");
+  width: 80vw;
+  height: 100vh;
+}
+
+.pic-container h1,
+.pic-container p {
+  color: white;
+}
+
+.pic-container>div {
+  position: absolute;
+  top: 105px;
+  left: 0px;
+  width: 564px;
+  height: 185px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.pic-container>div>h1 {
+  font-size: 96px;
+}
+
+.pic-container>p {
+  position: absolute;
+  top: 90vh;
+  left: 12vw;
+  display: flex;
+  align-items: center;
+}
+
+.pic-container>p>a {
+  color: white;
+  padding: 0px 5px;
+}
+
+.odin-lined {
+  width: 20%;
+  height: auto;
+}
+
+.form-container {
+  font-family: "Roboto", sans-serif;
+}
+
+.info-text {
+  padding: 100px 20px 0px 20px;
+  font-size: 24px;
+  width: 75%;
+}
+
+form>div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 320px 50px 30px;
+  gap: 25px 75px;
+  background-color: white;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+form>div>.field-area {
+  flex: 1 1 calc(50% - 75px);
+  display: flex;
+  flex-direction: column;
+}
+
+form>div>.field-area>input {
+  border-radius: 5px;
+}
+
+form>div>.field-area>input:user-invalid {
+  border: 2px solid red;
+  outline: 2px solid #E5E7EB;
+}
+
+form>div>.field-area>input:focus {
+  border: 2px solid blue;
+  outline: 2px solid #E5E7EB;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+form>div>.field-area>label {
+  color: #383838;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+form>div>p {
+  font-size: 24px;
+  width: 75%;
+}
+
+.create-btn {
+  margin: 20px 20px 0px 20px;
+  background-color: #596D48;
+  color: white;
+  padding: 10px 36px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.already-account {
+  margin-left: 20px;
+}
+
+.already-account span {
+  color: #596D48;
+  font-weight: bold;
+}
